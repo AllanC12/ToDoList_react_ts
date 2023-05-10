@@ -1,10 +1,17 @@
 import React from 'react';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <header>
+          <h1>ToDo React + TS</h1>
+      </header>
+      <h1>Conteúdo...</h1>
+      <footer>
+         <p>
+           <span>ToDo React + TS</span> @ 2023
+         </p>
+      </footer>
     </div>
   );
 }
