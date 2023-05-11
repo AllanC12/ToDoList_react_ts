@@ -1,5 +1,5 @@
 //styles scss
-import styles from './App.module.scss';
+import styles from './App.module.css';
 
 //components
 import Header from './components/Header';
