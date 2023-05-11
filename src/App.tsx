@@ -1,10 +1,18 @@
-import React from 'react';
-import './App.css';
+//styles scss
+import styles from './App.module.scss';
+
+//components
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+      <Header/>
+       <main className={styles.main}>
+          <h1>Conteúdo...</h1>
+       </main>
+      <Footer/>
     </div>
   );
 }
