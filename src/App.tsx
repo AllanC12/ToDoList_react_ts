@@ -1,17 +1,15 @@
 import React from 'react';
 
+//components
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 function App() {
   return (
     <div>
-      <header>
-          <h1>ToDo React + TS</h1>
-      </header>
-      <h1>Conteúdo...</h1>
-      <footer>
-         <p>
-           <span>ToDo React + TS</span> @ 2023
-         </p>
-      </footer>
+      <Header/>
+        <h1>Conteúdo...</h1>
+      <Footer/>
     </div>
   );
 }
