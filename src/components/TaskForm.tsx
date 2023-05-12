@@ -33,7 +33,6 @@ const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
     setDifficulty(0)
 
   };
-  console.log(taskList)
 
   return (
     <form onSubmit={handleAddTask} className={styles.form}>
