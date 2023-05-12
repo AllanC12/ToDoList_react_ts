@@ -8,7 +8,7 @@ import { ITask } from "../interface/Task";
 interface Props {
   btnText: string;
   taskList: ITask[];
-  setTaskList: React.Dispatch<React.SetStateAction<ITask[]>>;
+  setTaskList?: React.Dispatch<React.SetStateAction<ITask[]>>;
 }
 
 const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
@@ -28,12 +28,12 @@ const TaskForm = ({ btnText, taskList, setTaskList }: Props) => {
     e.preventDefault();
     const id = Math.floor(Math.random() * 1000);
     const newTask: ITask = { id, title, difficulty };
-    setTaskList([...taskList, newTask]);
+    setTaskList!([...taskList, newTask]);
     setTitle('')
     setDifficulty(0)
 
-    console.log(taskList)
   };
+  console.log(taskList)
 
   return (
     <form onSubmit={handleAddTask} className={styles.form}>
