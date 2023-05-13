@@ -13,7 +13,7 @@ const closeModal = (e:React.MouseEvent): void => {
 
 const Modal = ({children}: Props) => {
   return (
-    <div id='modal'>
+    <div id='modal' className="hide">
         <div className={styles.fade} onClick={closeModal}></div>
 
         <div className={styles.modal}>
