@@ -10,8 +10,7 @@ interface Props {
   taskList: ITask[]
   deleteTask(id:number): void
   handleEdit(task:ITask | null): void
-  task?: ITask | null
- }
+  }
 
 const TaskList = ({taskList,deleteTask,handleEdit}: Props) => {
   return (
